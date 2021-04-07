@@ -1,0 +1,9 @@
+; comment
+load    r0, ffff   ;   чтение в нулевой регист значения val1
+load    r1, fffe   ;   чтение в первый регист значения val2
+or      r0, r1      ;   логическая битовая операция "ИЛИ" r0 = r0 | r1
+store   fffd, r0    ;   запись значения в регистре r0 в res
+push    r0
+pop     r1
+hlt
+mov     r11, r3
